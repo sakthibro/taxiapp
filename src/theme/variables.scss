@@ -1,0 +1,155 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+@font-face {
+  font-family: 'Khula';
+  font-style: light;
+  font-weight: 300;
+  src: url('../assets/fonts/khula/Khula-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Khula';
+  font-style: regular;
+  font-weight: 400;
+  src: url('../assets/fonts/khula/Khula-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Khula';
+  font-style: semi-bold;
+  font-weight: 600;
+  src: url('../assets/fonts/khula/Khula-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Khula';
+  font-style: bold;
+  font-weight: 700;
+  src: url('../assets/fonts/khula/Khula-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Khula';
+  font-style: extra-bold;
+  font-weight: 800;
+  src: url('../assets/fonts/khula/Khula-ExtraBold.ttf');
+}
+
+/// FONT Montserrat
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: light;
+  font-weight: 300;
+  src: url('../assets/fonts/montserrat/Montserrat-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: regular;
+  font-weight: 400;
+  src: url('../assets/fonts/montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: extra-bold;
+  font-weight: 700;
+  src: url('../assets/fonts/montserrat/Montserrat-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: bold;
+  font-weight: 600;
+  src: url('../assets/fonts/montserrat/Montserrat-SemiBold.ttf');
+}
+
+// Font path is used to include ionicons,
+// roboto, and noto sans fonts
+$font-path: "../assets/fonts";
+
+
+// The app direction is used to include
+// rtl styles in your app. For more info, please see:
+// http://ionicframework.com/docs/theming/rtl-support/
+$app-direction: ltr;
+
+
+@import "ionic.globals";
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+
+
+
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary:    #FF1654,
+  secondary:  #70C1B3,
+  danger:     #f53d3d,
+  light:      #fff,
+  dark:       #484848
+);
+
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+$badge-ios-background-color: color($colors, secondary);
+
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+$badge-md-background-color: color($colors, secondary);
+
+
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+$badge-wp-background-color: color($colors, secondary);
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/ionicons/
+
+@import "ionic.ionicons";
+// @import "ionicons";
+
+// Fonts
+// --------------------------------------------------
+
+@import "roboto";
+@import "noto-sans";
+
+$fa-font-path: $font-path;
